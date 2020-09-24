@@ -11,10 +11,10 @@ public class Radio {
 
     public Radio(int currentStation, int stationMax, int stationMin, int amountStation) {
         if (currentStation > stationMax)
-            return;
+            this.currentStation = stationMin;
 
         if (currentStation < stationMin)
-            return;
+            this.currentStation = stationMax;
         this.currentStation = currentStation;
         this.stationMax = stationMax;
         this.stationMin = stationMin;
