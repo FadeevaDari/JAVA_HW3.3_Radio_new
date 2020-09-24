@@ -25,14 +25,14 @@ class RadioTest {
     public void shouldCurrentStationAfterMax() {
         Radio radio = new Radio(10, 9, 0, 10);
 
-       assertEquals(0, radio.getCurrentStation());
+       assertEquals(0, radio.getStationMin());
     }
 
     @Test
     public void shouldCurrentStationAnderMin() {
         Radio radio = new Radio(-1, 9, 0, 10);
 
-      assertEquals(0, radio.getCurrentStation());
+      assertEquals(9, radio.getStationMax());
     }
 
     @Test
